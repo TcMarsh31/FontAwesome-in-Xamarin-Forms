@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XLFontAwesome.MainPage"
+             Title="Font Awesome Icons">
+    <StackLayout>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+        <!-- Place new controls here -->
+        <Label Text="Font Awesome icon in Label Element" TextColor="Black" FontAttributes="Bold" FontSize="23"></Label>
+        <StackLayout HorizontalOptions="Center">
+        <Label Text="&#xf556;" TextColor="Orange"
+       FontFamily="{StaticResource FontAwesomeRegular}" FontSize="30" HorizontalOptions="CenterAndExpand"/>
+
+           <ContentView>
+               <ContentView.Content>
+                   <OnPlatform x:TypeArguments="View">
+                       <On Platform="Android">
+                           <Label Text="&#xf17b;" TextColor="Brown"
+                                FontFamily="{StaticResource FontAwesomeBrands}" FontSize="200" />
+                       </On>
+                       <On Platform="iOS">
+                           <Label Text="&#xf179;" TextColor="Brown"
+                                FontFamily="{StaticResource FontAwesomeBrands}" FontSize="200" />
+                       </On>
+                   </OnPlatform>
+               </ContentView.Content>
+           </ContentView>
+        
+
+        <Label Text="&#xf0f3;" TextColor="Magenta"
+       FontFamily="{StaticResource FontAwesomeSolid}" FontSize="30" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+    </StackLayout>
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" >
+        <!-- Place new controls here -->
+        <Label Text="Font Awesome icon in Image Element" TextColor="Black" FontAttributes="Bold" FontSize="23"></Label>
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+        <Image >
+            <Image.Source>
+                <FontImageSource Glyph="&#xf556;" FontFamily="{StaticResource FontAwesomeRegular}" Color="Blue"></FontImageSource>
+            </Image.Source>
+        </Image>
+
+            
+                <ContentView>
+               <ContentView.Content>
+                   <OnPlatform x:TypeArguments="View">
+                       <On Platform="Android">
+                           <Image>
+                            <Image.Source>
+                                <FontImageSource Glyph="&#xf17b;" FontFamily="{StaticResource FontAwesomeBrands}" Color="Red" Size="200"></FontImageSource>
+                            </Image.Source>
+                        </Image> 
+                           </On>
+                       <On Platform="iOS">
+                           <Image>
+                            <Image.Source>
+                                <FontImageSource Glyph="&#xf179;" FontFamily="{StaticResource FontAwesomeBrands}" Color="Red" Size="200"></FontImageSource>
+                            </Image.Source>
+                        </Image> 
+                           </On>
+                       </OnPlatform>
+                   </ContentView.Content>
+                    </ContentView>
+                
+
+        <Image>
+            <Image.Source>
+                <FontImageSource Glyph="&#xf0f3;" FontFamily="{StaticResource FontAwesomeSolid}" Color="Green"></FontImageSource>
+            </Image.Source>
+        </Image> 
+</StackLayout>
+       
+    </StackLayout>
+
+
+        </StackLayout>
+</ContentPage>

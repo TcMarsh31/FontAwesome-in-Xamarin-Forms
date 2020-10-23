@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="XLFontAwesome.XLFontAwesomeShell"
+       xmlns:views="clr-namespace:XLFontAwesome">
+    <TabBar>
+        <Tab Title="Page1">
+            <Tab.Icon>
+                <FontImageSource Glyph="&#xf556;" FontFamily="{StaticResource FontAwesomeRegular}" Color="DarkBlue" ></FontImageSource>
+            </Tab.Icon>
+            <ShellContent>
+                <views:MainPage />
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Page2">
+            <Tab.Icon>
+                <FontImageSource Glyph="&#xf556;" FontFamily="{StaticResource FontAwesomeRegular}" Color="Crimson" ></FontImageSource>
+            </Tab.Icon>
+            <ShellContent>
+                <views:MainPage />
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Page3">
+            <Tab.Icon>
+                <FontImageSource Glyph="&#xf556;" FontFamily="{StaticResource FontAwesomeRegular}"  Color="DarkGreen"></FontImageSource>
+            </Tab.Icon>
+            <ShellContent>
+                <views:MainPage />
+            </ShellContent>
+        </Tab>
+        
+    </TabBar>
+
+   
+</Shell>
